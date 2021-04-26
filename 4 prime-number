@@ -1,0 +1,16 @@
+# sadece girilen sayının asal olup olmadığını bulma:
+
+def asal_sayi():
+    asalmı=True
+    sayi=int(input("Kontrol etmek istediğiniz sayıyı giriniz : "))
+    if sayi==1:
+        asalmı=False
+        print("1 sayısı asal sayı değildir.")
+    for i in range(2,sayi):
+        if sayi%i==0:
+            asalmı=False
+            break
+    if asalmı==True:
+        print(f"Girilen sayı = {sayi} asal bir sayıdır.")
+    elif asalmı==False:
+        print(f"Girilen sayı = {sayi} asal değildir.")
