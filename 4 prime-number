@@ -1,5 +1,18 @@
-# sadece girilen sayının asal olup olmadığını bulma:
+# method1
+number =int(input("Enter a number: "))
+prime= True
+for i in range(2,number):
+    if number%i == 0:
+         prime= False
+         break
+if prime==True:
+    print(f"{number} is a prime")
+else:   
+      print(f"{number} is not a prime")
 
+Enter a number: 89
+89 is a prime
+# method2
 def asal_sayi():
     asalmı=True
     sayi=int(input("Kontrol etmek istediğiniz sayıyı giriniz : "))
